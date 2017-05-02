@@ -15,8 +15,6 @@ set(REDSHIFT_SRC
   src/config-ini.c
   src/gamma-drm.c
   src/gamma-dummy.c
-  # src/gamma-quartz.c  # Mac shit
-  # src/gamma-w32gdi.c  # Windows shit
   src/gamma-randr.c
   src/gamma-vidmode.c
   src/hooks.c
@@ -25,13 +23,15 @@ set(REDSHIFT_SRC
   src/redshift.c
   src/signals.c
   src/solar.c
-  src/systemtime.c)
+  src/systemtime.c
+  # src/gamma-quartz.c  # Mac shit
+  # src/gamma-w32gdi.c  # Windows shit
+  )
 
 # Define core library characteristics
-add_library(redshift SHARED ${REDSHIFT_SRC})
+add_library(redshift STATIC ${REDSHIFT_SRC})
 target_include_directories(redshift PRIVATE "src")
 target_include_directories(redshift PUBLIC "include")
-target_link_libraries(redshift DRM_LIBRARY gdi32 glib)
 
 # Include DRM dependencies
 target_include_directories(redshift PUBLIC ${DRM_INCLUDE_DIRS})
@@ -47,3 +47,10 @@ target_link_libraries(redshift ${GLIB_LIBRARIES})
 target_include_directories(redshift PUBLIC ${GEOCLUE_INCLUDE_DIRS})
 target_compile_options(redshift PUBLIC ${GEOCLUE_CFLAGS_OTHER})
 target_link_libraries(redshift ${GEOCLUE_LIBRARIES})
+
+#
+# You can uncomment the code below to build a small
+#   binary that links against libredshift
+
+# add_executable(redsample example.c)
+# target_link_libraries(redsample redshift)
