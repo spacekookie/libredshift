@@ -1,18 +1,30 @@
-# Hidden files
-.*
-!.git*
 
-# Backup files
-*~
-\#*\#
+# Created by https://www.gitignore.io/api/c,vim,cmake,jetbrains,sublimetext
+
+### C ###
+# Prerequisites
+*.d
 
 # Object files
 *.o
 *.ko
+*.obj
+*.elf
+
+# Linker output
+*.ilk
+*.map
+*.exp
+
+# Precompiled Headers
+*.gch
+*.pch
 
 # Libraries
 *.lib
 *.a
+*.la
+*.lo
 
 # Shared objects (inc. Windows DLLs)
 *.dll
@@ -24,53 +36,142 @@
 *.exe
 *.out
 *.app
-#src/redshift*
+*.i*86
+*.x86_64
+*.hex
 
-# autotools
-/autom4te.cache
-Makefile.in
-Makefile
-stamp-h1
-/config.*
-/ABOUT-NLS
-/aclocal.m4
-/configure
-/depcomp
-/install-sh
-/missing
-/py-compile
-/compile
-*.deps/
-/m4/
-libtool
-ltmain.sh
-
-# generated files
-src/redshift-gtk/defs.py
-src/redshift-gtk/redshift-gtk
-contrib/redshift.spec
-src/redshift
-src/redshift-gtk/__pycache__/
-/data/systemd/redshift.service
-/data/systemd/redshift-gtk.service
-/data/appdata/redshift-gtk.appdata.xml
-/data/applications/redshift.desktop
-/data/applications/redshift-gtk.desktop
-
+# Debug files
+*.dSYM/
 *.su
-*.gch
+*.idb
+*.pdb
 
-# gettext
-/po/POTFILES
-/po/stamp-po
-/po/stamp-it
-/po/*.gmo
-/po/Makefile.in.in
-/po/Rules-quot
-/po/boldquot.sed
-/po/Makevars.template
-/po/en@boldquot.header
-/po/en@quot.header
-/po/insert-header.sin
-/po/quot.sed
-/po/remove-potcdate.sin
+# Kernel Module Compile Results
+*.mod*
+*.cmd
+.tmp_versions/
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf
+
+### CMake ###
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Testing
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+
+### JetBrains ###
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and Webstorm
+# Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
+
+# User-specific stuff:
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/dictionaries
+
+# Sensitive or high-churn files:
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.xml
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+
+# Gradle:
+.idea/**/gradle.xml
+.idea/**/libraries
+
+# CMake
+cmake-build-debug/
+
+# Mongo Explorer plugin:
+.idea/**/mongoSettings.xml
+
+## File-based project format:
+*.iws
+
+## Plugin-specific files:
+
+# IntelliJ
+/out/
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+# Cursive Clojure plugin
+.idea/replstate.xml
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+
+### JetBrains Patch ###
+# Comment Reason: https://github.com/joeblau/gitignore.io/issues/186#issuecomment-215987721
+
+# *.iml
+# modules.xml
+# .idea/misc.xml
+# *.ipr
+
+# Sonarlint plugin
+.idea/sonarlint
+
+### SublimeText ###
+# cache files for sublime text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+
+# workspace files are user-specific
+*.sublime-workspace
+
+# project files should be checked into the repository, unless a significant
+# proportion of contributors will probably not be using SublimeText
+# *.sublime-project
+
+# sftp configuration file
+sftp-config.json
+
+# Package control specific files
+Package Control.last-run
+Package Control.ca-list
+Package Control.ca-bundle
+Package Control.system-ca-bundle
+Package Control.cache/
+Package Control.ca-certs/
+Package Control.merged-ca-bundle
+Package Control.user-ca-bundle
+oscrypto-ca-bundle.crt
+bh_unicode_properties.cache
+
+# Sublime-github package stores a github token in this file
+# https://packagecontrol.io/packages/sublime-github
+GitHub.sublime-settings
+
+### Vim ###
+# swap
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-v][a-z]
+[._]sw[a-p]
+# session
+Session.vim
+# temporary
+.netrwhist
+*~
+# auto-generated tag files
+tags
+
+# End of https://www.gitignore.io/api/c,vim,cmake,jetbrains,sublimetext
