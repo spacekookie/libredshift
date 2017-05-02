@@ -25,7 +25,7 @@
 #import <CoreLocation/CoreLocation.h>
 
 #include "location-corelocation.h"
-#include "redshift.h"
+#include <redshift.h>
 
 #include <stdio.h>
 

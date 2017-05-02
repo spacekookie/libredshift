@@ -34,7 +34,7 @@
 #include <xcb/randr.h>
 
 #include "gamma-randr.h"
-#include "redshift.h"
+#include <redshift.h>
 #include "colorramp.h"
 
 

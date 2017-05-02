@@ -22,7 +22,7 @@
 
 #include <stdio.h>
 
-#include "redshift.h"
+#include <redshift.h>
 
 
 int location_geoclue2_init(void *state);

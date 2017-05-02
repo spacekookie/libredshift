@@ -25,7 +25,7 @@
 #include <gio/gio.h>
 
 #include "location-geoclue2.h"
-#include "redshift.h"
+#include <redshift.h>
 
 #ifdef ENABLE_NLS
 # include <libintl.h>

@@ -33,7 +33,7 @@
 #include <X11/extensions/xf86vmode.h>
 
 #include "gamma-vidmode.h"
-#include "redshift.h"
+#include <redshift.h>
 #include "colorramp.h"
 
 

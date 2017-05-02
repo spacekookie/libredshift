@@ -43,7 +43,7 @@
 # define gettext(s) s
 #endif
 
-#include "redshift.h"
+#include <redshift.h>
 #include "config-ini.h"
 #include "solar.h"
 #include "systemtime.h"

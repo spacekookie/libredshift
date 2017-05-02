@@ -27,7 +27,7 @@
 #endif
 
 #include "hooks.h"
-#include "redshift.h"
+#include <redshift.h>
 
 #define MAX_HOOK_PATH  4096
 

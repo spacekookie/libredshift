@@ -27,7 +27,7 @@
 # define _(s) s
 #endif
 
-#include "redshift.h"
+#include <redshift.h>
 
 
 int

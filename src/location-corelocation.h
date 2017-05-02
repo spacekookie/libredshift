@@ -22,7 +22,7 @@
 
 #include <stdio.h>
 
-#include "redshift.h"
+#include <redshift.h>
 
 
 int location_corelocation_init(void *state);

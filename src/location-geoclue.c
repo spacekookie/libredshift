@@ -28,7 +28,7 @@
 #include <glib-object.h>
 
 #include "location-geoclue.h"
-#include "redshift.h"
+#include <redshift.h>
 
 #ifdef ENABLE_NLS
 # include <libintl.h>

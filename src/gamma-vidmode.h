@@ -20,7 +20,7 @@
 #ifndef REDSHIFT_GAMMA_VIDMODE_H
 #define REDSHIFT_GAMMA_VIDMODE_H
 
-#include "redshift.h"
+#include <redshift.h>
 
 #include <stdio.h>
 #include <stdint.h>

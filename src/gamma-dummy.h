@@ -20,7 +20,7 @@
 #ifndef REDSHIFT_GAMMA_DUMMY_H
 #define REDSHIFT_GAMMA_DUMMY_H
 
-#include "redshift.h"
+#include <redshift.h>
 
 
 int gamma_dummy_init(void *state);

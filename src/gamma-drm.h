@@ -25,7 +25,7 @@
 #include <xf86drm.h>
 #include <xf86drmMode.h>
 
-#include "redshift.h"
+#include <redshift.h>
 
 
 typedef struct {

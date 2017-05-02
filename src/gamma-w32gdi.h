@@ -23,7 +23,7 @@
 #include <windows.h>
 #include <wingdi.h>
 
-#include "redshift.h"
+#include <redshift.h>
 
 
 typedef struct {

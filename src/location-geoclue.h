@@ -23,7 +23,7 @@
 #include <stdio.h>
 #include <geoclue/geoclue-position.h>
 
-#include "redshift.h"
+#include <redshift.h>
 
 typedef struct {
 	GeocluePosition *position;  /* main geoclue object */
